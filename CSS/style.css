@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Gugi&display=swap');
+
+html,body,article,section{
+    height: 100%;
+}
+
+*{
+    margin :0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position : relative;
+}
+header,body{
+    font-family: 'Gugi', cursive;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+section:nth-child(1){
+    background: rgb(228, 241, 228) no-repeat fixed;
+    background-size: cover;
+}
+section:nth-child(2){
+    background: rgb(173, 236, 204) no-repeat fixed;
+    background-size: cover;
+}
+section:nth-child(3){
+    background: rgba(182, 221, 103, 0.699) no-repeat fixed;
+    background-size: cover;
+}
+
+/************** 헤덜 ************/
+header{
+    height: 100px;
+    background: pink;
+}
+#logo{
+    position: relative;
+    top: 28px;
+    left: 55px;
+    font-size: 2.1em;
+    color:white;
+}
+nav>ul{
+    display: block;
+    background: none;
+    box-shadow: none;
+    position: absolute;
+    padding-top:0;
+    height: auto;
+    top: 38px;
+    width: 400px;
+    right: 30px;
+}
+nav>ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+nav>ul>li>a{
+    color: white;
+}
+nav>ul>li>a:hover{
+
+    color: hotpink;
+    font-size:1.6em ;
+}
+
+/* ---------------- 컨텐트 --------------- */
+#content1{
+    display:block;
+    position: absolute;
+    left: 8%;
+    bottom: -85px;
+    font-size: 1.3em;
+}
+
+.profile{
+    box-shadow: 3px 3px 3px gray;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;  
+}
+#content2{
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 350px;
+    height: 350px; 
+    left: 60%;
+    bottom: 170px;
+}
+#content2 img{
+    position: absolute;
+}
+#content2 img:nth-child(2){
+    display: none;
+}
+#content2 img:nth-child(3){
+    display: none;
+}
+#content2 img:nth-child(4){
+    display: none;
+}
+
+#content2 img:nth-child(5){
+    display: none;
+}
+
+#tap {
+    display: flex;
+    justify-content: center;
+    font-size: 2.2em;
+    
+}
+
+#tap a{
+    padding :25px 30px;
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+#tap a.on{
+    border-bottom: 3px solid red;
+}
+
+
+#content3{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+#content3 img{
+    height: 550px;
+    width:500px;
+    margin-bottom: 10px;
+}
+#content4{
+    display: none;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+#content4 img{
+    height: 550px;
+    width:500px;
+    margin-bottom: 10px;
+}
+#content5{
+    display: none;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+#content5 img{
+    height: 550px;
+    width:500px;
+    margin-bottom: 10px;
+}
+
+#content6{
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    top: 150px;
+}
+
+#content6 img{
+     height: 450px;
+     width: 450px;
+}
+
+
+#content6 img:nth-child(1):hover{
+    background-image: url(../imgs/Strawberry.png);
+    transform:scale(1.2);
+}
+#content6 img:nth-child(2):hover{
+    background-image: url(../imgs/Gun.png);
+    transform:scale(1.2);
+}
+#content6 img:nth-child(3):hover{
+    background-image: url(../imgs/Apple.png);
+    transform:scale(1.2);
+}
